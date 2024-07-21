@@ -1,0 +1,94 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+span {
+  color: midnightblue;
+}
+.title-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+.right-card {
+width: 45%;
+float: right;
+}
+.left-card {
+  width: 45%;
+  float: left;
+}
+.card-text {
+  width: 72%;
+  margin-left: 200px;
+}
+.built {
+  width: 78%;
+  margin-left: 200px;
+
+}
+@media (min-width: 768px) {
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .right-card, .left-card {
+    width: 45%;
+  }
+
+  .title-image {
+    height: 200px;
+    width: auto;
+    float: left;
+    margin-right: 20px;
+  }
+
+  .card-text, .built {
+    width: auto;
+    margin-left: 220px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .right-card, .left-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .right-card img, .left-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .card-text, .built {
+    width: 100%;
+    margin-left: 0;
+  }
+}
